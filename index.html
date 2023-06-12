@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head section-->
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Virtual museum</title> 
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Styles and icons --> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css"> 
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarMenu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+    <!--Header section--> 
+    <header class="header-main">
+        <div class="header-info">
+            <div class="wrapper header container-sm"> 
+                <ul class="header-info-list">
+                    <li class="header-info-item">
+                        <a href="tel:444-546-8765"><i class="fa-solid fa-mobile-screen-button"></i> 444-546-8765</a>
+                    </li>
+                    <li class="header-info-item"><i class="fa-regular fa-clock"></i> Пн - Пт: 9:00 - 16:00</li>
+                </ul> 
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="wrapper header container-sm"> 
+                <nav class="navbar navbar-expand-sm w-100" id="navbarMenu">
+                    <div class="header-nav-content">
+                        <a class="navbar-brand" href="index.html#home"><img src="images/logo.png" alt="Company logo" class="img-logo"><h3>Народний музей Національного університету <br><span>Полтавська політехніка імені Юрія Кондратюка</span></h3></a> 
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"> 
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"> 
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close-menu" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                            </div> 
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav me-auto  mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="menu-link active" aria-current="page" href="#home">Головна</a>
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="menu-link" href="#about">Про музей</a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="menu-link" href="#history">Історія</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="menu-link" href="#nowadays">Музей сьогодні</a>  
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="menu-link" href="#viewPanorama">360&deg;</a> 
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="menu-link" href="#gallery">Галерея</a> 
+                                    </li> 
+                                </ul> 
+                            </div>
+                        </div>  
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header section-->  
+    <!--Home Section-->
+    <section id="home" class="home-section">
+        <div class="owl-carousel owl-theme banner-fl"> 
+            <div class="banner-item-fl" style="background-image: url(images/Museum_banner-1.gif);">
+                <div class="wrapper container-sm banner-item-content">
+                    <article>
+                        <p>Історія становлення</p>
+                        <h2 class="banner-item-title">Унікальний Музей в Стінах Університету</h2>
+                        <a href="#history">Детальніше</a>
+                    </article>
+                </div>
+            </div>
+            <div class="banner-item-fl" style="background-image: url(images/Museum_banner-2.gif);">
+                <div class="wrapper container-sm banner-item-content">
+                    <article>
+                        <p>Інститут шляхетних дівчат</p>
+                        <h2 class="banner-item-title">Навчальний Заклад Середини ХIХ ст.</h2>
+                        <a href="#founds">Детальніше</a>
+                    </article>
+                </div> 
+            </div>
+            <div class="banner-item-fl" style="background-image: url(images/Museum_banner-3.gif);">
+                <div class="wrapper container-sm banner-item-content">
+                    <article>
+                        <p>перші ректори</p>
+                        <h2 class="banner-item-title">Інститут Інженерів Сільськогосподарського Будівництва</h2>
+                        <a href="#founds">Детальніше</a>
+                    </article>
+                </div> 
+            </div>  
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="wrapper container-sm">
+            <div class="block-content">
+                <article class="about-desc">
+                    <span>Про музей</span>
+                    <h3>Народний музей   Національного університету «Полтавська політехніка імені Юрія Кондратюка»</h3>
+                    <p>
+                        − це  значуща сторінка в історії нашого вишу. За допомогою яскравих речових і документальних матеріалів  він не лише розкриває основні етапи становлення університету, що є флагманом сучасної освіти України, а й обіймає важливе місце у виховному процесі студентської молоді.
+                    </p>
+                    <a href="#history">Дізнатися більше</a>
+                </article>
+            </div> 
+            <div class="block-content">
+                <img src="images/about-image.JPG" alt="Про музей" class="about-image"> 
+            </div>
+        </div>
+    </section>
+    <section class="founder" style="background-image: url(images/museum-backgdrop.jpg);">
+        <div class="wrapper container-sm">
+            <div class="block-content"> 
+                <article class="founder-desc"> 
+                    <h3>Фундаторка "народного" музею</h3>
+                    <p>
+                        <i>З 1985 року завідування музеєм на громадських засадах керівництвом інституту було покладено на кандидатку історичних наук Н.К. Кочергу, яка обіймала тоді  посаду старшої викладачки кафедри філософії та соціально-політичних дисциплін. За її активної участі було модернізовано, доповнено та розширено експозицію музею, в якому відобразилася його цікава історія, починаючи з Інституту шляхетних дівчат до величних звершень сьогодення.  В основу формування  тематико-експозиційного плану було покладено принципи об’єктивності й історизму, позбавлені ідеологічних нашарувань доби.</i>
+                    </p>
+                    <p>
+                        <i>Н.К. Кочерга проводила значну краєзнавчу роботу, відкриваючи нові й нові імена особистостей, доля яких переплелася з історією  закладу вищої освіти.</i>
+                    </p>
+                </article>
+            </div> 
+            <div class="block-content">
+                <img src="images/kocherga.jpg" alt="Founder" class="founder-image">
+                <span>Надія Костянтинівна Кочерга</span>  
+            </div>
+        </div>
+    </section>
+    <section id="history" class="history-section" style="background-image: url(images/фон.jpg);">
+        <div class="wrapper container-sm">
+            <article class="history-desc">
+                <span>історія музею</span>
+                <h3>Історія заснування музею</h3>
+                <p class="lead"> 
+                    Музей історії Полтавського інженерно-будівельного інституту було відкрито 8 травня 1975 року.
+                </p>
+                <img src="images/history-image.jpg" class="history-image" alt="Історія">
+                <p>
+                    У підготовчій роботі активну участь взяв весь науково-педагогічний колектив, громадські організації, кафедри: архітектури, військової підготовки, особливо О.Н. Могилат, Б.Ф. Сафонов, секретар парткому Ю.Е. Баламовський та інші. Експонати музею відображали трудові й бойові традиції вишу, його внесок у державну справу підготовки інженерно-будівельних кадрів, виховували повагу до старших наставників, любов до обраного фаху.
+                </p>
+                <p>
+                    Завідувачкою музею до 1985 року на громадських засадах була  кандидатка історичних наук, доцентка  М.С. Кушнір. 
+                </p>
+                <h4>Ухвалою колегії управління культури Полтавської обласної державної адміністрації від 22 липня 1998 р. за високий рівень дослідницької, краєзнавчої та культурно-виховної роботи музею присвоєно  статус «народного».</h4> 
+                <p>
+                    Громадський актив музею постійно проводить пошукову науково-дослідницьку роботу, бере участь у наукових конференціях міста, області, країни, публікує результати досліджень у краєзнавчих журналах та збірниках наукових праць.
+                </p> 
+            </article>
+        </div>
+    </section>
+    <section id="nowadays" class="nowadays-section">
+        <div class="block-content">
+            <img src="images/museum-static.jpg" class="nowadays-image" alt="Музей сьогодні">
+        </div>
+        <div class="block-content">
+            <article class="nowadays-desc">
+                <span>музей сьогодні</span>
+                <h3>Народний музей Національного університету «Полтавська політехніка імені Юрія Кондратюка»</h3>
+                <p>
+                    є осередком українознавчої, культурологічної та виховної роботи в студентському та науково-педагогічному колективі  провідного в Україні закладу вищої освіти.
+                </p>
+                <div class="stats-container">
+                    <div class="stats-item">
+                        <h4>1 144 </h4>
+                        <p> 
+                            Загальна кількість документів
+                        </p>
+                    </div>
+                    <div class="stats-item">
+                        <h4>815</h4>
+                        <p>
+                            Предметів основного фонду
+                        </p>
+                    </div>
+                    <div class="stats-item">
+                        <h4>10</h4>
+                        <p>
+                            Розділів експозиції
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="founds" class="founds-section" style="background-image: url(images/фон.jpg);">
+        <div class="wrapper container-sm">
+            <div class="block-content">
+                <article class="founds-desc">
+                    <span>Фонди музею</span>
+                    <h3>Тематичні розділи музею</h3>
+                    <p> 
+                        Експозиція музею має 4 основних розділів, та 10 у загальній кількості, де розташовано понад тисячу експонатів, які знайомлять відвідувачів з історією будівлі головного корпусу, а також із етапами розвитку та традиціями колективу закладу вищої освіти.
+                    </p>
+                    <div class="founds-list">
+                        <div class="founds-item">
+                            <h4>01<span>Досягнення Ю.В.Кондратюка</span></h4>
+                            <p>
+                                Перший розділ присвячено  нашому видатному краянинові.
+                            </p>
+                        </div>
+                        <div class="founds-item">
+                            <h4>02<span>Інститут шляхетних дівчат</span></h4>
+                            <p>
+                                Другий розділ експозиції музею присвячено висвітленню діяльності Інституту шляхетних дівчат. 
+                            </p>
+                        </div>
+                        <div class="founds-item">
+                            <h4>03<span>Історія створення інституту</span></h4>
+                            <p>
+                                Третій розділ експозиції присвячено висвітленню історії створення першого в країні інституту інженерів сільськогосподарського будівництва.
+                            </p>
+                        </div>
+                        <div class="founds-item">
+                            <h4>04<span>Досягнення колективу</span></h4>
+                            <p>
+                                Четвертий розділ експозиції презентує новітні досягнення науково-педагогічного колективу університету за роки незалежності України.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="block-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="tab-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Розділ 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="tab-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Розділ 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="tab-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Розділ 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="tab-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >Розділ 4</button>
+                    </li> 
+                  </ul> 
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <article>
+                            <h5 class="tab-pane-title">Досягнення Ю.В.Кондратюка</h5>    
+                            <p>
+                                Даний розділ присвячено  нашому видатному краянинові. У музеї представлено постійно діючу виставку матеріалів із архіву першого біографа Ю.В.Кондратюка (О. Г. Шаргея),  його двоюрідного брата А.В. Даценка.
+                            </p>
+                            <p>
+                                Увагу  відвідувачів  привертають фотодокументи, які розповідають про дитячі та юнацькі  роки  О.Шаргея,  його  захоплення  технікою, розкривають  роль у розвитку ракетної  і космічної  галузі.
+                            </p>
+                            <div class="tabs-images">
+                                <a href="images/museum-static.jpg" class="gallery-item">
+                                    <img src="images/museum-static.jpg" class="gallery-image"> 
+                                </a>
+                                <a href="images/IMG_8166.JPG" class="gallery-item">
+                                    <img src="images/IMG_8166.JPG" class="gallery-image"> 
+                                </a>
+                                <a href="images/IMG_8174.JPG" class="gallery-item">
+                                    <img src="images/IMG_8174.JPG" class="gallery-image"> 
+                                </a>
+                            </div>
+                            <p>
+                                Ураховуючи загальнодержавне і міжнародне визнання результатів діяльності Полтавського державного технічного університету імені Юрія Кодратюка, його вагомий внесок у розвиток національної освіти і науки Указом Президента України від 27 березня 2002 року університету присвоєно статус національного.
+                            </p> 
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <article>
+                            <h5 class="tab-pane-title">Інститут шляхетних дівчат</h5> 
+                            <p>
+                                Даний розділ експозиції музею присвячено висвітленню діяльності Інституту шляхетних дівчат – середнього навчального закладу для збіднілих дворянок – та історії будівництва центрального корпусу навчального закладу, що є пам’яткою архітектури першої половини ХІХ ст. 
+                            </p>
+                            <p>
+                                Полтавський  Інститут шляхетних дівчат засновано 12 грудня 1818 року на кошти дворянства з ініціативи дружини Полтавського та Чернігівського генерал-губернатора князя М. Г. Рєпніна – Варвари Олексіївни. 
+                            </p>
+                            <div class="tabs-images two">
+                                <a href="images/section-image.JPG" class="gallery-item two">
+                                    <img src="images/section-image.JPG" class="gallery-image"> 
+                                </a>
+                                <a href="images/p-p-artemovsky.jpg" class="gallery-item two">
+                                    <img src="images/p-p-artemovsky.jpg" class="gallery-image"> 
+                                </a>
+                                <a href="images/v-o-repnina.jpg" class="gallery-item two">
+                                    <img src="images/v-o-repnina.jpg" class="gallery-image"> 
+                                </a>
+                            </div>
+                            <p>
+                                Науково-освітні й педагогічні традиції було започатковано такими відомими педагогами, як П.П. Гулак-Артемовський, Л.І. Боровиковський, В. В. Капніст, М.М.Цертелєв, Ф.І.Ткаченко, К.В.Рощина, І.К.Зайцев, В.О.Волков, А.В. Єдлічка та ін. 
+                            </p>
+                            <p>
+                                За сторічну історію діяльності цього навчального закладу в ньому бували І.П.Котляревський, Т.Г.Шевченко, М.В. Гоголь, В.А. Жуковський.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <article>
+                            <h5 class="tab-pane-title">Історія створення інституту</h5> 
+                            <p>
+                                В даному розділі експозиції висвітлено історію створення першого в країні інституту інженерів сільськогосподарського будівництва. 
+                            </p>
+                            <p>
+                                На п’яти кафедрах єдиного будівельного факультету працювало 33 викладачі, навчалися 282 студенти. 
+                            </p>
+                            <div class="tabs-images three">
+                                <a href="images/IMG_8125.JPG" class="gallery-item three">
+                                    <img src="images/IMG_8125.JPG" class="gallery-image"> 
+                                </a>
+                                <a href="images/rectors.JPG" class="gallery-item three">
+                                    <img src="images/rectors.JPG" class="gallery-image"> 
+                                </a>
+                                <a href="images/institute.jpg" class="gallery-item three">
+                                    <img src="images/institute.jpg" class="gallery-image"> 
+                                </a>
+                            </div>
+                            <p>
+                                На експозиційних стендах цього розділу вміщено фото перших викладачів, студентів, директорів інституту, представлено документи того періоду.
+                            </p>
+                            <p>
+                                Серед перших викладачів інституту – випускник київської політехніки, дипломник видатного вченого-інженера Є.О. Патона – М. С. Торяник,  який заснував наукову школу залізобетону в інституті; Є.В. Платонов – створив наукову школу з основ i фундаментів; колишній губернський архітектор міста Полтави Т.Я.Гардасевич – зачинатель наукової школи архітектурного проектування; суспільні дисципліни в інституті викладали О.К. Касименко, С.Ю. Данішева ..
+                            </p>
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                        <article>
+                            <h5 class="tab-pane-title">Досягнення колективу</h5> 
+                            <p>
+                                Даний розділ експозиції презентує новітні досягнення науково-педагогічного колективу університету за роки незалежності України.
+                            </p>
+                            <p>
+                                Серед них: Почесна Грамота Кабінету Міністрів України (2010 р.), Привітання Президента України з нагоди 75-річчя навчального закладу та інші. Начальний заклад пишається Лауреатами Державної премії України в галузі науки і техніки, архітектури Лобурцем А.Т., (1997), Вахненком П.Ф.(1998), Вадимовим В.М.(2000 р.). 
+                            </p>
+                            <div class="tabs-images four">
+                                <a href="images/awards-stuff.jpg" class="gallery-item four">
+                                    <img src="images/awards-stuff.jpg" class="gallery-image"> 
+                                </a>
+                                <a href="images/IMG_8139.JPG" class="gallery-item four">
+                                    <img src="images/IMG_8139.JPG" class="gallery-image"> 
+                                </a>
+                                <a href="images/IMG_8140.JPG" class="gallery-item four">
+                                    <img src="images/IMG_8140.JPG" class="gallery-image"> 
+                                </a>
+                            </div>
+                            <p>
+                                Експозицію побудовано  за тематичним принципом, де розкрито науково-дослідницьку, громадську, міжнародну діяльність колективу. 
+                            </p>
+                            <p>
+                                На стендах розміщено фото засновників наукових шкіл, студентських лідерів. В експозиції викладено підручники, навчальні посібники, монографії членів  науково-педагогічного колективу.
+
+                            </p>
+                        </article>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section id="viewPanorama" class="panorama-section">
+        <div class="panorama-intro">
+            <div class="panorama-intro-bg"></div>
+            <div>
+                <span>3D простір експозицій</span>
+                <h3>Віртуальні Панорами Музею</h3>
+                <button id="activatePanorama">Розпочати</button>
+            </div>
+        </div>
+        <div id="panorama"></div>
+    </section>
+     
+     
+    <!--Javascript files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script> 
+    <script src="js/script.js"></script>
+    <!--Bootstrap files-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <!--Javascript files-->
+</body>
