@@ -3,25 +3,25 @@ let activateBtn = document.getElementById('activatePanorama'),
     panorama = document.getElementById('panorama');  
 const awards = {
     "title": "Досягнення університету",
-    "image-1": "http://localhost:80/virtual-museum/images/IMG_8139.JPG",
-    "image-2": "http://localhost:80/virtual-museum/images/IMG_8140.JPG",
+    "image-1": "/images/IMG_8139.JPG",
+    "image-2": "/images/IMG_8140.JPG",
     "desc": "Даний розділ експозиції презентує новітні досягнення науково-педагогічного колективу університету за роки незалежності України." 
 } 
 const insitute = {
     "titlePerson-1": "П.П. Гулак - Артемовський",
-    "imagePerson-1": "http://localhost:80/virtual-museum/images/p-p-artemovsky.jpg",
+    "imagePerson-1": "/images/p-p-artemovsky.jpg",
     "titlePerson-2": "В.О. Рєпніна",
-    "imagePerson-2": "http://localhost:80/virtual-museum/images/v-o-repnina.jpg",
+    "imagePerson-2": "/images/v-o-repnina.jpg",
     "titlePerson-3": "М.Г. Рєпнін",
-    "imagePerson-3": "http://localhost:80/virtual-museum/images/m-g-repnin.jpg",
+    "imagePerson-3": "/images/m-g-repnin.jpg",
     "sectionTitle": "Інститут шляхетних дівчат ",
-    "sectionImage": "http://localhost:80/virtual-museum/images/section-image.JPG",
+    "sectionImage": "/images/section-image.JPG",
     "sectionDesc-1": "Перший розділ експозиції музею присвячено висвітленню діяльності Інституту шляхетних дівчат – середнього навчального закладу для збіднілих дворянок – та історії будівництва центрального корпусу навчального закладу, що є пам’яткою архітектури першої половини ХІХ ст. ",
     "sectionDesc-2": "Полтавський  Інститут шляхетних дівчат засновано 12 грудня 1818 року на кошти дворянства з ініціативи дружини Полтавського та Чернігівського генерал-губернатора князя М. Г. Рєпніна – Варвари Олексіївни. ",   
 }
 const rectors = {
     "rectorsTitle": "Перші ректори університету", 
-    "rectorsImage": "http://localhost:80/virtual-museum/images/rectors.JPG",
+    "rectorsImage": "/images/rectors.JPG",
     "rectorsDesc-1": "На п’яти кафедрах єдиного будівельного факультету працювало 33 викладачі, навчалися 282 студенти. Серед перших викладачів інституту – випускник київської політехніки, дипломник видатного вченого-інженера Є.О. Патона – М. С. Торяник,  який заснував наукову школу залізобетону в інституті; Є.В. Платонов – випускник інституту інженерів шляхів сполучення в Петрограді, створив наукову школу з основ i фундаментів; колишній губернський архітектор міста Полтави Т.Я.Гардасевич – зачинатель наукової школи архітектурного проектування; суспільні дисципліни в інституті викладали О.К. Касименко, С.Ю. Данішев – у подальшому відомі вітчизняні історики..",
 }
  
@@ -62,7 +62,7 @@ pannellum.viewer('panorama', {
             "pitch": -3,
             "yaw": 117,
             "type": "equirectangular",
-            "panorama": "http://localhost:80/virtual-museum/images/scene-1.JPG",
+            "panorama": "/images/scene-1.JPG",
             "hotSpots": [
                 {
                     "pitch": -18,
@@ -86,7 +86,7 @@ pannellum.viewer('panorama', {
             "hfov": 110,
             "yaw": 5,
             "type": "equirectangular",
-            "panorama": "http://localhost:80/virtual-museum/images/scene-2.JPG",
+            "panorama": "/images/scene-2.JPG",
             "hotSpots": [
                 {
                     "pitch": -14,
