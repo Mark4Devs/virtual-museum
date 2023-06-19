@@ -318,8 +318,7 @@ header{
 .founder-desc{
     width: 85%;
 }
-.founder-desc h3{
-    text-transform: capitalize;
+.founder-desc h3{ 
     color: #ffffff;
 }
 .founder-desc p{
@@ -362,7 +361,7 @@ header{
     align-items: center;
     padding: 0px 100px;
     background-color: #222222;
-    background-image: url(/images/museum-backgdrop.jpg);
+    background-image: url(http://localhost:80/virtual-museum/images/museum-backgdrop.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -451,7 +450,8 @@ header{
 .nav-tabs{
     width: fit-content;
     display: flex;
-    border-bottom: none;  
+    border-bottom: none; 
+    margin: 0 auto;  
 }
 .tab-link{
     width: 100%;
@@ -517,7 +517,7 @@ header{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    background-image: url(/images/museum-static.jpg);
+    background-image: url(http://localhost:80/virtual-museum/images/museum-static.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -604,7 +604,7 @@ header{
 .custom-hotspot {
     height: 31px;
     width: 31px;  
-    background-image: url(/images/download.svg);
+    background-image: url(http://localhost:80/virtual-museum/images/download.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -621,8 +621,8 @@ div.custom-tooltip article {
     margin-top: -20vw;
     margin-left: 66px;
     cursor: default;
-    width: 45vw;
-    max-width: 1000px;
+    width: 21vw;
+    max-width: 500px; 
     transform: translateY(40px);
     -webkit-transform: translateY(40px);
     -moz-transform: translateY(40px);
@@ -644,14 +644,65 @@ div.custom-tooltip article h3{
     margin-bottom: 30px;  
 } 
 div.custom-tooltip article p{ 
-    text-align: left;
+    text-align: justify;
     color: #111111;
     font-size: 16px; 
 }
 div.custom-tooltip article img{
-    width: 48.5%;
-    margin-bottom: 30px;
+    width: 100%; 
 }
+div.custom-tooltip-awards-person article{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 30px;
+    margin-top: 0;
+    margin-left: 66px;
+    cursor: default;
+    width: 21vw;
+    max-width: 500px; 
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+    opacity: 0;
+    transition: transform, opacity, .4s ease-in-out;
+    -webkit-transition: transform, opacity, .4s ease-in-out;
+    -moz-transition: transform, opacity, .4s ease-in-out;
+    -ms-transition: transform, opacity, .4s ease-in-out;
+    -o-transition: transform, opacity, .4s ease-in-out;
+}
+div.custom-tooltip-awards-person article .person-sm{
+    width: 48%;
+    margin-bottom: 30px;
+} 
+div.custom-tooltip-awards-person article p{
+    text-align: justify;
+    color: #111111;
+    font-size: 16px; 
+}
+div.custom-tooltip-awards-person:hover article {
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+    transition: transform, opacity, .4s ease-in-out;
+    -webkit-transition: transform, opacity, .4s ease-in-out;
+    -moz-transition: transform, opacity, .4s ease-in-out;
+    -ms-transition: transform, opacity, .4s ease-in-out;
+    -o-transition: transform, opacity, .4s ease-in-out;
+    z-index: 999;
+} 
+
+
 div.custom-tooltip:hover article {
     visibility: visible;
     transform: translateY(0);
@@ -678,10 +729,10 @@ div.custom-tooltip-person article {
     text-align: center;
     padding: 30px;
     margin-top: -14vw;
-    margin-left: -17vw;
+    margin-left: -19vw;
     cursor: default;
-    width: 12vw;
-    max-width: 300px;
+    width: 15vw;
+    max-width: 350px;
     transform: translateY(40px);
     -webkit-transform: translateY(40px);
     -moz-transform: translateY(40px);
@@ -699,9 +750,22 @@ div.custom-tooltip-person article h5{
     font-family: 'Playfair Display', serif;
     font-size: 21px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     color: #111111;
     margin-bottom: 30px;  
+} 
+div.custom-tooltip-institute article .diorama-title{
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    color: #111111;
+}
+div.custom-tooltip-person article p{
+    text-align: justify;
+    color: #111111;
+    font-size: 16px; 
 } 
 div.custom-tooltip-person article img{
     width: 100%;
@@ -842,6 +906,31 @@ div.custom-tooltip-rectors:hover article {
     -o-transition: transform, opacity, .4s ease-in-out;
     z-index: 999;
 } 
+.gallery-section{
+    padding: 100px 0px; 
+}
+.chapter-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chapter-item figure{
+    width: 31%;
+    height: 320px;
+}
+.chapter-image{
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+} 
+.chapter-item figure:nth-of-type(2), .chapter-item figure:nth-of-type(5){
+    margin: 0px 15px; 
+}
+.gallery-section .tab-pane{
+    background: none; 
+}
+
+
 
 
 
